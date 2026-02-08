@@ -153,7 +153,7 @@ export default function Home() {
             </div>
           )}
 
-          <div className="mt-610">
+          <div className="mt-630">
             <h2 className="text-[841426]  text-center leading-tight text-[50px] sm:text-5xl lg:text-[80px] flex flex-col items-center gap-y-6">
               <span className="font-playfair-display font-normal text-[#E5A292]">Forever Starts Here.</span>
               <span className="font-cormorant text-4xl text-[#E5A292]">{steps[step].question}</span>
@@ -171,6 +171,10 @@ export default function Home() {
                 </button>
               ))}
             </div>
+
+
+
+            
           </div>
         </div>
       </section>
