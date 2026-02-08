@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from "react";
+
 export default function Home() {
+  const [showLetter, setShowLetter] = useState(false);
   return (
     <>
-      <section className="relative w-full h-1250 overflow-hidden ">
+      <section className="relative w-full h-2500 overflow-hidden ">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-center bg-cover"
@@ -97,6 +100,40 @@ export default function Home() {
 
             </div>
           </div>
+
+
+ {/* FIRST DIV (Click wala) */}
+      {!showLetter && (
+        <div
+          className="ml-[36%] mr-[35%] mt-430 cursor-pointer"
+          onClick={() => setShowLetter(true)}
+        >
+          <img
+            src="/letter_box.png"
+            alt=""
+            className="animate-bounce"
+          />
+        </div>
+      )}
+
+
+        {/* SECOND DIV (Hidden initially) */}
+      {showLetter && (
+        <div className="bg-[url('/love_letter.png')] bg-no-repeat bg-cover 
+          w-[380px] h-[500px] bg-center 
+          ml-[37%] mr-[45%] mt-415">
+
+          <div className="flex flex-col text-center">
+            {/* content here */}
+          </div>
+
+        </div>
+      )}
+
+
+
+
+
 
         </div>
 
