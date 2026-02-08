@@ -77,7 +77,6 @@ export default function Home() {
               <h2 className="text-black font-cormorant-upright lg:text-[30px] md:text-2xl text-[22px] -rotate-10">
                 First Meet
               </h2>
-
             </div>
           </div>
 
