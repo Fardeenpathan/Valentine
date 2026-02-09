@@ -136,12 +136,11 @@ export default function Home() {
       <section className="relative w-full h-2200 overflow-hidden ">
 
         <div
-          className="absolute inset-0 bg-center bg-cover"
+          className=" absolute inset-0 bg-center bg-cover"
           style={{
             backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770626392/bg_forever_l0t5k1.png')",
           }}
         />
-
 
 
         {/* Decorative Lamps - Natural Flow Pattern */}
@@ -393,8 +392,8 @@ export default function Home() {
 
             {showYesScreen && (
               <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-md">
-                <div className="w-[90%] max-w-2xl rounded-3xl bg-gradient-to-b
-      from-[#fff7d6] to-[#fff1b8]
+                <div className="w-[90%] max-w-2xl rounded-3xl border border-[#1b0f14]-500/50
+      bg-gradient-to-b 
       px-10 py-14 text-center shadow-2xl">
 
                   {/* 🎉 */}
@@ -412,8 +411,8 @@ export default function Home() {
 
                   <button
                     onClick={() => setShowYesScreen(false)}
-                    className="mt-8 rounded-full bg-blue-500 px-8 py-3
-        text-white font-semibold hover:bg-blue-600 transition"
+                    className="mt-8 rounded-full bg-[#800000] px-8 py-3
+        text-white font-semibold hover:bg-red-700 transition"
                   >
                     💕 Forever 💕
                   </button>
