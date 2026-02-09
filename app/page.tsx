@@ -46,7 +46,7 @@ export default function Home() {
   const steps = [
     {
       question: "When did I First Fell For You? 💘",
-      buttons: ["Jan 29", "Feb 12", "Jan28", "I Don't Remember"],
+      buttons: ["Jan 29", "Feb 12", "I Don't Remember"],
     },
     {
       question: "What is the gift that I bought you on our first date? 🎁",
@@ -216,7 +216,7 @@ export default function Home() {
 
 
 
-        <div className="relative z-10 flex flex-col  h-full text-white lg:pt-80 pt-20">
+        <div className="relative z-10 flex flex-col  h-full text-white lg:pt-80 pt-6">
 
           <h2 className="text-[841426]  text-center leading-tight
      text-[50px] sm:text-5xl lg:text-[80px]
@@ -227,7 +227,7 @@ export default function Home() {
             <span className="font-cormorant italic md:text-2xl text-[18px]">Lets rewind time for a little while</span>
           </h2>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[285px] h-[250px] bg-center md:ml-[30%] ml-[10%] mr-[45%] md:mt-360 mt-140">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[285px] h-[250px] bg-center md:ml-[30%] ml-[4%] mr-[45%] md:mt-360 mt-155">
             <div className="flex flex-col   text-center mb-8">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[20px] md:mt-20 mt-12   -rotate-10">
@@ -264,7 +264,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[285px] h-[250px] bg-center ml-[10%] md:ml-[30%] mr-[45%] mt-109 rotate-6">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[285px] h-[250px] bg-center ml-[10%] md:ml-[30%] mr-[45%] mt-19 md:mt-109 rotate-6">
             <div className="flex flex-col   text-center mb-8">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[22px] md:mt-20 mt-12 -rotate-10">
@@ -281,7 +281,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[285px] h-[250px] bg-center ml-[10%] md:ml-[40.5%] mr-[45%] mt-65">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[285px] h-[250px] bg-center ml-[10%] md:ml-[40.5%] mr-[45%] md:mt-65 mt-30">
             <div className="flex flex-col   text-center mb-8">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[22px] md:mt-20 mt-12 -rotate-10">
@@ -301,32 +301,32 @@ export default function Home() {
 
           {!showLetter && (
             <div
-              className="ml-[36%] mr-[35%] mt-390 cursor-pointer"
+              className="md:ml-[36%] mr-[35%] ml-[20%] md:mt-390 mt-100 cursor-pointer"
               onClick={() => setShowLetter(true)}
             >
               <img
                 src="/letter_box.png"
                 alt=""
-                className="animate-bounce [animation-duration:2s]"
+                className="animate-bounce [animation-duration:2s] md:w-95 md:h-125 w-75 h-[260px]"
               />
             </div>
           )}
 
           {showLetter && (
             <div className="bg-[url('/love_letter.png')] bg-no-repeat bg-cover 
-          w-[380px] h-[500px] bg-center 
-          ml-[37%] mr-[45%] mt-390 mb-30 py-20 px-10 animate-bounce [animation-duration:3s]">
+          md:w-[380px] md:h-[500px] w-[285px] h-[350px] bg-center 
+          md:ml-[37%] mr-[45%] ml-[10%] md:mt-390 mt-100 md:mb-30 mb-0 md:py-20 py-6 px-10 animate-bounce [animation-duration:3s]">
 <div className="flex flex-col-2 gap-2 justify-end items-end pr-4 -rotate-6"><img src="" alt="" className="w-12 h-12 border-6"/>
 <img src="" alt="" className="w-12 h-12 border-4"/>
 </div>
 
               <div className="flex flex-col -rotate-4 pl-2">
-<h2 className="text-black font-cormorant text-3xl ">
+<h2 className="text-black font-cormorant md:text-3xl text-xl">
   My Love, ❤️
 
 </h2>
 
-<h2 className="text-[#515151] mt-6 font-cormorant pr-4 text-xl ">
+<h2 className="text-[#515151] mt-6 font-cormorant pr-4 md:text-xl text-[14px]">
   You make every ordinary moment feel special just by being you. Your smile means more to me than words can say. This Valentine’s Day, I just want you to know that my heart chooses you today and always.
 
 </h2>
@@ -340,19 +340,19 @@ export default function Home() {
 
           {!showBook && (
             <div
-              className="ml-[35%] mr-[20%] mt-160 cursor-pointer"
+              className="ml-[35%] mr-[20%] md:mt-160 mt-70 cursor-pointer"
               onClick={() => setShowBook(true)}
             >
               <img
                 src="/book.png"
                 alt=""
-                className="animate-bounce [animation-duration:2s] w-[550px] h-[400px]"
+                className="animate-bounce [animation-duration:2s] md:w-[550px] md:h-[400px] w-[420px] h-[290px]"
               />
             </div>
           )}
 
           {showBook && (
-            <div className="bg-[url('/card1.png')] bg-no-repeat bg-cover  w-95 h-125 bg-center ml-[37%] mr-[45%] mt-150 ">
+            <div className="bg-[url('/card1.png')] bg-no-repeat bg-cover  w-95 h-125 bg-center md:ml-[37%] ml-[10%] mr-[45%] md:mt-150 mt-20">
 
               <div className="flex flex-col text-center">
 
