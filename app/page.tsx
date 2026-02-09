@@ -138,7 +138,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-center bg-cover"
           style={{
-            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770614273/bg_forever_okv1da.png')",
+            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770626392/bg_forever_l0t5k1.png')",
           }}
         />
 
@@ -209,7 +209,7 @@ export default function Home() {
 
 
 
-        <div className="relative z-10 flex flex-col  h-full text-white pt-20">
+        <div className="relative z-10 flex flex-col  h-full text-white pt-80">
 
           <h2 className="text-[841426]  text-center leading-tight
      text-[50px] sm:text-5xl lg:text-[80px]
@@ -220,7 +220,7 @@ export default function Home() {
             <span className="font-cormorant italic text-2xl">Lets rewind time for a little while</span>
           </h2>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-368">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-360">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -239,7 +239,7 @@ export default function Home() {
           </div>
 
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40%] mr-[45%] mt-35">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40%] mr-[45%] mt-38 rotate-6">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -257,7 +257,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-110">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-109 rotate-6">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
