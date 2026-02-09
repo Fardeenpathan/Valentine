@@ -432,7 +432,7 @@ export default function Home() {
                   
 
                   <p className="text-lg text-white">
-                    Thank you for making my day special! 
+                    This moment feels complete with you.
                   </p>
 
                   <button
