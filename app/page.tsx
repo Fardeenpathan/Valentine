@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState,useMemo } from "react";
+import { useRef, useState, useMemo } from "react";
 
 
 const FloationBallon = ({ className, style, reverse = false }: { className: string; style?: React.CSSProperties; reverse?: boolean }) => {
@@ -67,6 +67,8 @@ export default function Home() {
   const [showLetter, setShowLetter] = useState(false);
   const [showBook, setShowBook] = useState(false);
   const [step, setStep] = useState(0);
+  const [showPopup, setShowPopup] = useState(false);
+  const [showYesScreen, setShowYesScreen] = useState(false);
 
 
 
@@ -96,8 +98,19 @@ export default function Home() {
 
 
 
+  const handleClick = (btn) => {
+    const isLast = steps[step].question === "Will you be my valentine? 💝";
 
-  const handleClick = () => {
+    if (isLast && btn === "No 😡") {
+      setShowPopup(true);
+      return;
+    }
+
+    if (isLast && btn === "yes 💖") {
+      setShowYesScreen(true);
+      return;
+    }
+
     if (step < steps.length - 1) {
       setStep(step + 1);
     }
@@ -105,12 +118,6 @@ export default function Home() {
 
 
 
-
-
-
-
-
-  
   return (
     <>
 
@@ -137,9 +144,9 @@ export default function Home() {
 
 
 
- {/* Decorative Lamps - Natural Flow Pattern */}
+        {/* Decorative Lamps - Natural Flow Pattern */}
         {/* Left-to-Right Lamps - Less crowded */}
-      
+
         <FloationBallon className="absolute top-20 left-60 w-14 h-14 transform rotate-15 opacity-80" />
         <FloationBallon className="absolute top-30 left-80 w-14 h-14 transform rotate-25 opacity-75" />
         <FloationBallon className="absolute top-50 left-100 w-18 h-18 transform rotate-10 opacity-85" />
@@ -158,10 +165,10 @@ export default function Home() {
         <FloationBallon className="hidden lg:block absolute top-160 left-160 w-18 h-18 transform rotate-18 opacity-80" />
         <FloationBallon className="hidden lg:block absolute top-40 left-180 w-18 h-18 transform rotate-28 opacity-85" />
 
-         {/* <FloationBallon className="hidden lg:block absolute top-50 left-40 w-40 h-40 transform rotate-30 opacity-85" />
+        {/* <FloationBallon className="hidden lg:block absolute top-50 left-40 w-40 h-40 transform rotate-30 opacity-85" />
         <FloationBallon className="hidden lg:block absolute top-60 left-40 w-40 h-40 transform rotate-15 opacity-80" />
         <FloationBallon className="hidden lg:block absolute top-80 left-80 w-40 h-40 transform rotate-25 opacity-75" /> */}
-        
+
 
 
 
@@ -311,10 +318,6 @@ export default function Home() {
           )}
 
 
-
-
-
-
           {!showBook && (
             <div
               className="ml-[35%] mr-[20%] mt-160 cursor-pointer"
@@ -341,8 +344,6 @@ export default function Home() {
           )}
 
 
-
-
           <div className="mt-230">
             <h2 className="text-[841426]  text-center leading-tight text-[50px] sm:text-5xl lg:text-[80px] flex flex-col items-center gap-y-6">
               <span className="font-playfair-display font-normal text-[#E5A292]">Forever Starts Here.</span>
@@ -353,7 +354,7 @@ export default function Home() {
               {steps[step].buttons.map((btn, index) => (
                 <button
                   key={index}
-                  onClick={handleClick}
+                  onClick={() => handleClick(btn)}
                   className="w-[180px] py-3 rounded-full  bg-white/20 backdrop-blur-md  border border-white/30
               text-white font-semibold shadow-lg  hover:bg-white/30 hover:scale-105 transition cursor-pointer"
                 >
@@ -362,8 +363,64 @@ export default function Home() {
               ))}
             </div>
 
+            {showPopup && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md">
+                <div className="relative w-[90%] max-w-xl rounded-2xl border border-red-500/50
+      bg-gradient-to-b from-[#1b0f14] to-[#12080c]
+      px-8 py-10 text-center shadow-2xl">
+
+                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-red-600">
+                    <span className="text-3xl font-bold text-white">✕</span>
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-red-500 mb-2">
+                    Invalid choice.
+                  </h3>
+                  <p className="text-white/80 text-sm">
+                    System has detected you are already my Valentine.
+                  </p>
+
+                  <button
+                    onClick={() => setShowPopup(false)}
+                    className="mt-6 rounded-full border border-red-500 px-6 py-2
+        text-red-400 hover:bg-red-500 hover:text-white transition"
+                  >
+                    Try Again 💔
+                  </button>
+                </div>
+              </div>
+            )}
 
 
+            {showYesScreen && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-md">
+                <div className="w-[90%] max-w-2xl rounded-3xl bg-gradient-to-b
+      from-[#fff7d6] to-[#fff1b8]
+      px-10 py-14 text-center shadow-2xl">
+
+                  {/* 🎉 */}
+                  <div className="text-6xl mb-4">❤️</div>
+
+                  <h1 className="text-3xl sm:text-4xl font-semibold text-red-600 mb-4">
+                    Yay! You're My Valentine!
+                  </h1>
+
+                  <div className="text-2xl mb-4">🎊</div>
+
+                  <p className="text-lg text-purple-600">
+                    Thank you for making my day special! ❤️
+                  </p>
+
+                  <button
+                    onClick={() => setShowYesScreen(false)}
+                    className="mt-8 rounded-full bg-blue-500 px-8 py-3
+        text-white font-semibold hover:bg-blue-600 transition"
+                  >
+                    💕 Forever 💕
+                  </button>
+                </div>
+              </div>
+            )}
 
           </div>
         </div>
