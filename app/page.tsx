@@ -27,6 +27,7 @@ export default function Home() {
 
 
   const [showLetter, setShowLetter] = useState(false);
+   const [showBook, setShowBook] = useState(false);
   const [step, setStep] = useState(0);
   const handleClick = () => {
     if (step < steps.length - 1) {
@@ -40,7 +41,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-center bg-cover"
           style={{
-            backgroundImage: "url('/back_forever.png')",
+            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770614273/bg_forever_okv1da.png')",
           }}
         />
 
@@ -110,7 +111,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40.5%] mr-[45%] mt-78">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40.5%] mr-[45%] mt-81">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -136,7 +137,7 @@ export default function Home() {
               <img
                 src="/letter_box.png"
                 alt=""
-                className="animate-bounce"
+                className="animate-bounce [animation-duration:2s]"
               />
             </div>
           )}
@@ -144,7 +145,7 @@ export default function Home() {
           {showLetter && (
             <div className="bg-[url('/love_letter.png')] bg-no-repeat bg-cover 
           w-[380px] h-[500px] bg-center 
-          ml-[37%] mr-[45%] mt-415">
+          ml-[37%] mr-[45%] mt-415 mb-30">
 
               <div className="flex flex-col text-center">
 
@@ -153,7 +154,40 @@ export default function Home() {
             </div>
           )}
 
-          <div className="mt-630">
+
+
+
+
+
+ {!showBook && (
+            <div
+              className="ml-[35%] mr-[20%] mt-190 cursor-pointer"
+              onClick={() => setShowBook(true)}
+            >
+              <img
+                src="/book.png"
+                alt=""
+                className="animate-bounce [animation-duration:2s] w-[550px] h-[400px]"
+              />
+            </div>
+          )}
+
+          {showBook && (
+            <div className="bg-[url('/card1.png')] bg-no-repeat bg-cover 
+          w-[380px] h-[500px] bg-center 
+          ml-[37%] mr-[45%] mt-150 ">
+
+              <div className="flex flex-col text-center">
+
+              </div>
+
+            </div>
+          )}
+
+
+
+
+          <div className="mt-250">
             <h2 className="text-[841426]  text-center leading-tight text-[50px] sm:text-5xl lg:text-[80px] flex flex-col items-center gap-y-6">
               <span className="font-playfair-display font-normal text-[#E5A292]">Forever Starts Here.</span>
               <span className="font-cormorant text-4xl text-[#E5A292]">{steps[step].question}</span>
