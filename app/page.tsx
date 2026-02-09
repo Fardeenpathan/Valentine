@@ -301,7 +301,7 @@ export default function Home() {
 
           {!showLetter && (
             <div
-              className="md:ml-[36%] mr-[35%] ml-[20%] md:mt-390 mt-100 cursor-pointer"
+              className="md:ml-[36%] mr-[35%] ml-[20%] md:mt-405 mt-100 cursor-pointer"
               onClick={() => setShowLetter(true)}
             >
               <img
@@ -362,24 +362,30 @@ export default function Home() {
           )}
 
 
-          <div className="mt-230">
-            <h2 className="text-[841426]  text-center leading-tight text-[50px] sm:text-5xl lg:text-[80px] flex flex-col items-center gap-y-6">
-              <span className="font-playfair-display font-normal text-[#E5A292]">Forever Starts Here.</span>
+          <div className="md:mt-230 mt-100 mx-4">
+    <div className="bg-[url('/question_bg.png')]
+  bg-no-repeat bg-center bg-cover lg:bg-cover py-16 md:min-h-130 h-160 w-full rounded-2xl overflow-hidden flex flex-col items-center justify-center">
+            <h2 className="text-center leading-tight text-[30px] sm:text-5xl lg:text-[80px] flex flex-col items-center md:gap-y-6 ">
+              <span className="font-playfair-display text-[#E5A292] ">Forever Starts Here.</span>
               <span className="font-cormorant text-4xl text-[#E5A292]">{steps[step].question}</span>
             </h2>
 
-            <div className="flex items-center justify-center gap-5 mt-12">
-              {steps[step].buttons.map((btn, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleClick(btn)}
-                  className="w-[180px] py-3 rounded-full  bg-white/20 backdrop-blur-md  border border-white/30
-              text-white font-semibold shadow-lg  hover:bg-white/30 hover:scale-105 transition cursor-pointer"
-                >
-                  {btn}
-                </button>
-              ))}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-5 mt-12">
+  {steps[step].buttons.map((btn, index) => (
+    <button
+      key={index}
+      onClick={() => handleClick(btn)}
+      className="w-[180px] py-3 rounded-full bg-white/20 backdrop-blur-md
+      border border-white/30 text-white font-semibold shadow-lg
+      hover:bg-white/30 hover:scale-105 transition cursor-pointer"
+    >
+      {btn}
+    </button>
+  ))}
+</div>
+
             </div>
+            
 
             {showPopup && (
               <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md">
