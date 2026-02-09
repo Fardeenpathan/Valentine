@@ -79,7 +79,7 @@ export default function Home() {
       <audio ref={audioRef} src="/valentine.mp3" loop />
 
       
-      <section className="relative w-full h-2500 overflow-hidden ">
+      <section className="relative w-full h-2200 overflow-hidden ">
         
         <div
           className="absolute inset-0 bg-center bg-cover"
@@ -89,7 +89,7 @@ export default function Home() {
         />
 
        
-        <div className="relative z-10 flex flex-col  h-full text-white pt-80">
+        <div className="relative z-10 flex flex-col  h-full text-white pt-20">
 
           <h2 className="text-[841426]  text-center leading-tight
      text-[50px] sm:text-5xl lg:text-[80px]
@@ -100,7 +100,7 @@ export default function Home() {
             <span className="font-cormorant italic text-2xl">Lets rewind time for a little while</span>
           </h2>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-408">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-368">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
 
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40%] mr-[45%] mt-44">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40%] mr-[45%] mt-35">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-120">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-110">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40.5%] mr-[45%] mt-81">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40.5%] mr-[45%] mt-65">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
@@ -174,7 +174,7 @@ export default function Home() {
         
           {!showLetter && (
             <div
-              className="ml-[36%] mr-[35%] mt-430 cursor-pointer"
+              className="ml-[36%] mr-[35%] mt-390 cursor-pointer"
               onClick={() => setShowLetter(true)}
             >
               <img
@@ -188,7 +188,7 @@ export default function Home() {
           {showLetter && (
             <div className="bg-[url('/love_letter.png')] bg-no-repeat bg-cover 
           w-[380px] h-[500px] bg-center 
-          ml-[37%] mr-[45%] mt-415 mb-30">
+          ml-[37%] mr-[45%] mt-390 mb-30">
 
               <div className="flex flex-col text-center">
 
@@ -204,7 +204,7 @@ export default function Home() {
 
  {!showBook && (
             <div
-              className="ml-[35%] mr-[20%] mt-190 cursor-pointer"
+              className="ml-[35%] mr-[20%] mt-160 cursor-pointer"
               onClick={() => setShowBook(true)}
             >
               <img
@@ -230,7 +230,7 @@ export default function Home() {
 
 
 
-          <div className="mt-250">
+          <div className="mt-230">
             <h2 className="text-[841426]  text-center leading-tight text-[50px] sm:text-5xl lg:text-[80px] flex flex-col items-center gap-y-6">
               <span className="font-playfair-display font-normal text-[#E5A292]">Forever Starts Here.</span>
               <span className="font-cormorant text-4xl text-[#E5A292]">{steps[step].question}</span>
