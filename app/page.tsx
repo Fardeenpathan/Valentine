@@ -133,7 +133,7 @@ export default function Home() {
       <audio ref={audioRef} src="/valentine.mp3" loop />
 
 
-      <section className="relative w-full h-2200 overflow-hidden ">
+      <section className="relative w-full md:h-2200 h-2200 overflow-hidden ">
 
         <div
           className=" absolute inset-0 bg-center bg-cover hidden lg:block"
@@ -227,10 +227,29 @@ export default function Home() {
             <span className="font-cormorant italic md:text-2xl text-[18px]">Lets rewind time for a little while</span>
           </h2>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] md:mt-360 mt-140">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[320px] h-[260px] bg-center md:ml-[30%] ml-[10%] mr-[45%] md:mt-360 mt-140">
             <div className="flex flex-col   text-center">
 
-              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
+              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[22px] md:mt-20 mt-16  -rotate-10">
+                <span className="font-carattere">The</span> <br />
+                <span className="font-dancing-script font-bold md:text-3xl text-[22px]">BEGINNING</span>
+                <span className="font-carattere"> of</span> <br />
+                <span className="font-carattere md:text-5xl text-[32px]">Forever </span>
+                <span className="font-dancing-script font-bold"> STARTS HERE</span>
+              </h2>
+
+              <h2 className="text-black font-cormorant-upright lg:text-[30px] md:text-2xl text-[26px] -rotate-10">
+                First Meet
+              </h2>
+
+            </div>
+          </div>
+
+
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[320px] h-[260px] bg-center  ml-[10%] md:ml-[40%] mr-[45%] mt-38 rotate-6">
+            <div className="flex flex-col   text-center">
+
+              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[22px] md:mt-20 mt-16 -rotate-10">
                 <span className="font-carattere">The</span> <br />
                 <span className="font-dancing-script font-bold text-3xl">BEGINNING</span>
                 <span className="font-carattere"> of</span> <br />
@@ -245,29 +264,10 @@ export default function Home() {
             </div>
           </div>
 
-
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40%] mr-[45%] mt-38 rotate-6">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[320px] h-[260px] bg-center ml-[10%] md:ml-[30%] mr-[45%] mt-109 rotate-6">
             <div className="flex flex-col   text-center">
 
-              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
-                <span className="font-carattere">The</span> <br />
-                <span className="font-dancing-script font-bold text-3xl">BEGINNING</span>
-                <span className="font-carattere"> of</span> <br />
-                <span className="font-carattere text-5xl">Forever</span>
-                <span className="font-dancing-script font-bold"> STARTS HERE</span>
-              </h2>
-
-              <h2 className="text-black font-cormorant-upright lg:text-[30px] md:text-2xl text-[22px] -rotate-10">
-                First Meet
-              </h2>
-
-            </div>
-          </div>
-
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-109 rotate-6">
-            <div className="flex flex-col   text-center">
-
-              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
+              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[22px] md:mt-20 mt-16 -rotate-10">
                 <span className="font-carattere">The</span> <br />
                 <span className="font-dancing-script font-bold text-3xl">BEGINNING</span>
                 <span className="font-carattere"> of</span> <br />
@@ -281,10 +281,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[40.5%] mr-[45%] mt-65">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover md:w-[380px] md:h-[330px] w-[320px] h-[260px] bg-center ml-[10%] md:ml-[40.5%] mr-[45%] mt-65">
             <div className="flex flex-col   text-center">
 
-              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
+              <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[22px] md:mt-20 mt-16 -rotate-10">
                 <span className="font-carattere">The</span> <br />
                 <span className="font-dancing-script font-bold text-3xl">BEGINNING</span>
                 <span className="font-carattere"> of</span> <br />
