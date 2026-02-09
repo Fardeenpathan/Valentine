@@ -58,7 +58,7 @@ export default function Home() {
     },
     {
       question: "Will you be my valentine? 💝",
-      buttons: ["yes 💖", "No 😡"],
+      buttons: ["Yes, always", "I need a second"],
     },
   ];
 
@@ -364,7 +364,7 @@ export default function Home() {
 
           <div className="md:mt-230 mt-80 mx-4">
     <div className="bg-[url('/question_bg.png')]
-  bg-no-repeat bg-center bg-cover lg:bg-cover py-16 md:min-h-130 h-160 w-full rounded-2xl overflow-hidden flex flex-col items-center justify-center">
+  bg-no-repeat bg-center bg-cover lg:bg-cover py-16 md:min-h-130 h-160 w-full rounded-2xl overflow-hidden flex flex-col items-center justify-center" >
             <h2 className="text-center leading-tight text-[30px] sm:text-5xl lg:text-[80px] flex flex-col items-center md:gap-y-6 ">
               <span className="font-playfair-display text-[#E5A292] ">Forever Starts Here.</span>
               <span className="font-cormorant md:text-4xl text-[#E5A292] text-xl px-12">{steps[step].question}</span>
@@ -422,17 +422,17 @@ export default function Home() {
       bg-gradient-to-b 
       px-10 py-14 text-center shadow-2xl">
 
-                  {/* 🎉 */}
-                  <div className="text-6xl mb-4">❤️</div>
+                  
+                  
 
                   <h1 className="text-3xl sm:text-4xl font-semibold text-red-600 mb-4">
                     Yay! You're My Valentine!
                   </h1>
 
-                  <div className="text-2xl mb-4">🎊</div>
+                  
 
-                  <p className="text-lg text-purple-600">
-                    Thank you for making my day special! ❤️
+                  <p className="text-lg text-white">
+                    Thank you for making my day special! 
                   </p>
 
                   <button
@@ -440,7 +440,7 @@ export default function Home() {
                     className="mt-8 rounded-full bg-[#800000] px-8 py-3
         text-white font-semibold hover:bg-red-700 transition"
                   >
-                    💕 Forever 💕
+                     Forever 
                   </button>
                 </div>
               </div>
@@ -448,6 +448,18 @@ export default function Home() {
 
           </div>
         </div>
+
+        {/* <div className="fixed top-5 left-5 z-50">
+  <a href="https://palevioletred-hamster-362989.hostingersite.com/">
+    <button className="flex items-center gap-3 border-white border-2 bg-white/0 backdrop-blur text-white px-6 py-3 rounded-full shadow-lg cursor-pointer">    
+      <span className="text-3xl leading-none">←</span>
+      <span className="text-[16px] font-semibold">
+        Exit Preview
+      </span>
+
+    </button>
+  </a>
+</div> */}
       </section>
 
     </>
