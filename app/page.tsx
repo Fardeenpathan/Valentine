@@ -222,12 +222,12 @@ export default function Home() {
      text-[50px] sm:text-5xl lg:text-[80px]
   flex flex-col items-center gap-y-6">
 
-            <span className="font-playfair-display font-normal">I  Made <span className="italic"> Something</span>
+            <span className="font-playfair-display font-normal text-[34px] md:text-[80px]">I  Made <span className="italic"> Something</span>
               <br /> For <span className="italic">You</span></span>
-            <span className="font-cormorant italic text-2xl">Lets rewind time for a little while</span>
+            <span className="font-cormorant italic md:text-2xl text-[18px]">Lets rewind time for a little while</span>
           </h2>
 
-          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] mt-360">
+          <div className="bg-[url('/card1.png')] bg-no-repeat  bg-cover w-[380px] h-[330px] bg-center ml-[30%] mr-[45%] md:mt-360 mt-140">
             <div className="flex flex-col   text-center">
 
               <h2 className="text-[#841426] lg:text-[30px] md:text-2xl text-[18px] mt-20 -rotate-10">
