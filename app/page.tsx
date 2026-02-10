@@ -91,7 +91,7 @@ export default function Home() {
   <div
           className=" absolute inset-0 bg-center bg-cover bg-no-repeat block lg:hidden"
           style={{
-            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709968/forever_bg_mobile_ddcmik.png')",
+            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770721951/forever_bg_mobile_e6bird.png')",
           }}
         />
 
@@ -246,21 +246,23 @@ export default function Home() {
 
           {!showLetter && (
             <div
-              className="md:ml-[36%] mr-[35%] ml-[20%] md:mt-390 mt-100 cursor-pointer"
+              className="md:ml-[38%] md:mr-[35%] mr-[17%] ml-[24%] md:mt-390 mt-70 cursor-pointer group "
               onClick={() => setShowLetter(true)}
             >
               <img
                 src="/letter_box.png"
                 alt=""
-                className="animate-bounce [animation-duration:2s] md:w-95 md:h-125 w-75 h-[260px]"
+                className="animate-bounce [animation-duration:2s] md:w-95 md:h-125 w-75 h-65 transition-all duration-300
+               group-hover:scale-105
+               group-hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.9)]"
               />
             </div>
           )}
 
           {showLetter && (
-            <div className="bg-[url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709709/love_letter_zznh3z.png')] bg-no-repeat bg-cover 
+            <div className="bg-[url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709709/love_letter_zznh3z.png')] bg-no-repeat md:bg-cover bg-contain 
           md:w-[380px] md:h-[500px] w-[285px] h-[500px] bg-center 
-          md:ml-[37%] mr-[45%] ml-[10%] md:mt-350 mt-80 md:mb-30 mb-0 md:py-20 py-6 px-10 ">
+          md:ml-[37%] mr-[45%] ml-[10%] md:mt-350 mt-80 mb-30 md:py-20 py-16 px-10 ">
 {/* <div className="flex flex-col-2 gap-2 justify-end items-end pr-4 -rotate-6"><img src="" alt="" className="w-12 h-12 border-6"/>
 <img src="" alt="" className="w-12 h-12 border-4"/>
 </div> */}
@@ -285,13 +287,15 @@ export default function Home() {
 
           {!showBook && (
             <div
-              className="ml-[35%] mr-[20%] md:mt-140 mt-70 cursor-pointer"
+              className="ml-[35%] mr-[20%] md:mt-140 mt-60 cursor-pointer group"
               onClick={() => setShowBook(true)}
             >
               <img
                 src="https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709719/book_tkraq1.png"
                 alt=""
-                className="animate-bounce [animation-duration:2s] md:w-[550px] md:h-[400px] w-[420px] h-[200px]"
+                className="animate-bounce [animation-duration:2s] md:w-[550px] md:h-[400px] w-[420px] h-[200px] transition-all duration-300
+               group-hover:scale-105
+               group-hover:drop-shadow-[0_0_10px_rgba(255,215,0,0.9)]"
               />
             </div>
           )}
