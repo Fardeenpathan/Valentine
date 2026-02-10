@@ -91,7 +91,7 @@ export default function Home() {
   <div
           className=" absolute inset-0 bg-center bg-cover bg-no-repeat block lg:hidden"
           style={{
-            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709138/forever_bg_mobile_wasyg9.png')",
+            backgroundImage: "url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709968/forever_bg_mobile_ddcmik.png')",
           }}
         />
 
@@ -258,7 +258,7 @@ export default function Home() {
           )}
 
           {showLetter && (
-            <div className="bg-[url('/love_letter.png')] bg-no-repeat bg-cover 
+            <div className="bg-[url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709709/love_letter_zznh3z.png')] bg-no-repeat bg-cover 
           md:w-[380px] md:h-[500px] w-[285px] h-[500px] bg-center 
           md:ml-[37%] mr-[45%] ml-[10%] md:mt-350 mt-80 md:mb-30 mb-0 md:py-20 py-6 px-10 ">
 {/* <div className="flex flex-col-2 gap-2 justify-end items-end pr-4 -rotate-6"><img src="" alt="" className="w-12 h-12 border-6"/>
@@ -289,7 +289,7 @@ export default function Home() {
               onClick={() => setShowBook(true)}
             >
               <img
-                src="/book.png"
+                src="https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709719/book_tkraq1.png"
                 alt=""
                 className="animate-bounce [animation-duration:2s] md:w-[550px] md:h-[400px] w-[420px] h-[200px]"
               />
@@ -297,7 +297,7 @@ export default function Home() {
           )}
 
           {showBook && (
-            <div className="bg-[url('/open_book.png')] bg-no-repeat bg-cover  md:w-140 md:h-85 w-80 h-70 bg-center md:ml-[37%] ml-[8%] mr-[45%] md:mt-150 mt-60">
+            <div className="bg-[url('https://res.cloudinary.com/dx2di0mvx/image/upload/v1770709714/open_book_sgbaod.png')] bg-no-repeat bg-cover  md:w-140 md:h-85 w-80 h-70 bg-center md:ml-[37%] ml-[8%] mr-[45%] md:mt-150 mt-60">
 
               <div className="flex flex-col text-center">
 
